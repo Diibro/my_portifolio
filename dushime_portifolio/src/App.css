@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Tilt+Warp&family=Ultra&display=swap');
+.fontfamily{
+  font-family: 'Inter', sans-serif;
+font-family: 'Tilt Warp', cursive;
+font-family: 'Ultra', serif;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+:root {
+  max-width: 100%;
+  text-align: center;
+  --brown: #F34068;
+  --dark-blue:#006b7f;
+  --light-blue:#6fa9b7;
+  --white:#fefefe;
+  --padding: 60px;
+  --round:50px;
+  font-size: 20px;
+  --lighter-blue:#6fa9b744;
+  --light-brown:#f340678f;
+  --darker-blue:#003944;
+}
+
+@media (max-width:767px){
+  :root{
+    font-size:12px;
+  }
+}
+
+.Root{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+}
+
+body{
+  position: relative;
+  background: var(--white);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: linear-gradient(90deg, #f7bed6be, #add3ff, #fad8ef, #d4feff);
+  padding:var(--padding) 0 ;
+}
+
+
+.App{
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Header{
+  position: relative;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: calc(0.5 * var(--padding));
+}
+
+.Header .Logo{
+  position: relative;
+  font-size: 5rem;
+  font-family: 'Ultra', serif;
+  color: var(--dark-blue);
+
+}
+.Header .Logo span{
+  position: absolute;
+  color: var(--brown);
+  font-size: 3rem;
+  bottom: 0;
+  left: 50%;
+  text-shadow: 0px 1px 5px var(--light-blue);
+}
+
+
+.Navbar{
+  position: relative;
+  background: var(--lighter-blue);
+  width: clamp(400px, 30%, 800px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: calc(1 * var(--round));
+  z-index: 10;
+}
+
+.Navbar ul{
+  position: relative;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(0.15 * var(--padding)) calc(0.3 * var(--padding));
+}
+
+
+.Navbar ul li{
+  position: relative;
+  width: 24%;
+  border-radius: var(--round);
+  font-size: 1rem;
+  color: var(--brown);
+  transition: all 1s;
+  font-weight: 500;
+}
+
+.Navbar ul li .Navlink{
+  position: relative;
+  color: var(--brown);
+  transition: all 0.5s;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.Navbar ul li .LinkActive{
+  color: var(--white);
+  transition: all 0.5s;
+  font-size: 1rem;
+  top: 10px;
+  font-weight: 700;
+}
+
+.Navbar ul .activeLi{
+  background: var(--light-blue);
+  transition: all 1s;
+}
+
+.Header .social-media{
+  width:clamp(200px, 15%, 400px);
+  background: var(--lighter-blue);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: calc(0.2 * var(--padding)) 0;
+  border-radius: var(--round);
+}
+
+.Header .social-media a{
+  /*color: var(--white); */
+  color: var(--brown);
+  font-size: 1.2rem;
+  width: 15%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  transition: all 1s;
+}
+
+.Header .social-media a:hover{
+  transition: all 1s;
+  font-size: 1.3rem;
+  transform: scale(1.5);
+  background: var(--dark-blue);
+  color: var(--white);
+}
+
+.Home{
+  position: relative;
+  top: 0;
+  width: 90%;
+  display:flex ;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #bef7d1be, #add3ff, #fad8ef, #a9f5e5);
+  box-shadow:0px 0px 10px 0px var(--darker-blue);
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: var(--padding) 0;
+
+}
+
+.Home .section-1{
+  width: clamp(700px,50%, 1200px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Home .section-1 .title{
+  color:var(--dark-blue);
+  font-size: 2rem;
+  font-weight:900;
+  font-family: 'Tilt Warp', cursive;
+  width: clamp(400px, 60%, 1200px);
+  text-align: justify;
+}
+
+.Home .section-1 .title span{
+  color: var(--brown);
+}
+.Home .section-1 .paragraph{
+  width: clamp(400px, 50%, 800px);
+  margin-top: calc(0.5 * var(--padding));
+  font-size:0.9rem;
+  color: var(--darker-blue);
+  font-weight: 600;
+}
+
+.Home .section-2{
+  width: clamp(600px,45%, 1200px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: var(--lighter-blue);
+  padding: calc(1 * var(--padding)) calc(1.5 * var(--padding));
+  border-radius: calc(0.5 * var(--round));
+}
+
+.Home .section-2 .doc-sec{
+
+  position: relative;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.Home .section-2 .doc-sec .title{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: var(--white);
+}
+
+.Home .section-2 .projects{
+  width: 60%;
+}
+
+.Home .section-2 .projects h2{
+  width: 100%;
+  text-align: left;
+  font-size: 1.4rem;
+  color: var(--white );
+  text-shadow: 1px 1px 1px var(--dark-blue);
+}
+
+.Home .section-2 .projects .project-list{
+  width: 100%;
+}
+
+.Home .section-2 .projects .project-list ul{
+  list-style-type: none;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.Home .section-2 .projects .project-list ul li{
+  width: 100%;
+  text-align: left;
+  transition:all 0.2s;
+  font-size: 0.9rem;
+}
+
+.Home .section-2 .projects .project-list ul li:hover, .Home .section-2 .doc-sec .title a:hover{
+  border-left: 10px solid var(--brown);
+  padding-left: 5px;
+  transition:all 0.2s;
+}
+
+.Home .section-2 .projects .project-list ul li a{
+  color: var(--dark-blue);
+  text-shadow: 1px 1px 1px var(--white);
+}
+
+.Home .section-2 .doc-sec .title a{
+  color: var(--dark-blue);
+  text-shadow: 1px 1px 1px var(--white);
+  font-size: 0.92rem;
+  font-weight: 400;
+  font-family: 'Ultra', serif;
+  transition:all 0.2s;
+}
+.Footer{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: calc(0.5 * var(--padding)) 0;
+  flex-wrap: wrap;
+}
+
+.Footer .footer__Col{
+  font-size: 0.9rem;
+
+}
+
+.pdf_viewer{
+  position: absolute;
+  width: 800px;
+  height: 1600px;
+  background: var(--brown);
+  display: none;
+}
