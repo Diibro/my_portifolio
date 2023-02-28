@@ -14,10 +14,10 @@ const Home = () => {
             <h2>Projects</h2>
             <div className='project-list'>
               <ul>
-                <li><a href="#">Celebrate Gifts</a></li>
-                <li><a href="#">Desc calculator</a></li>
+                <li><a href="https://celebrate.rw/">Celebrate Gifts</a></li>
+                <li><a href="https://calc-desc-softlab.netlify.app/">Desc calculator</a></li>
                 <li><a href="#">descsoftlab site</a></li>
-                <li><a href="#">bookings website</a></li>
+                <li><a href="https://bookings.huuzagroup.com/">bookings website</a></li>
                 <li><a href="#">More...</a></li>
               </ul>
             </div>

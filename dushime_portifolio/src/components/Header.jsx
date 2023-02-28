@@ -16,7 +16,7 @@ const Navbar = () =>{
         onClick={() => setActiveClass("/")} >Work</NavLink></li>
         <li className={activeClass === "/about" || window.location.pathname === "/about" ? "activeLi" : ""} ><NavLink to="/about" className={({isActive}) => isActive ? "LinkActive": "Navlink"} onClick={() => setActiveClass("/about")} >About</NavLink></li>
         <li className={activeClass === "/fun" || window.location.pathname === "/fun" ? "activeLi" : ""} ><NavLink to="/fun" className={({isActive}) => isActive ? "LinkActive": "Navlink"} onClick={() => setActiveClass("/fun")} >Fun</NavLink></li>
-        <li>Contact</li>
+        <li><a href="https://nluy0b0iyvk.typeform.com/to/Aa85MYVj">Contact</a></li>
       </ul>
     </div>
   )
